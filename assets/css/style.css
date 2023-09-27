@@ -1,0 +1,145 @@
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c4-logo {
+  margin: 1rem 0 1rem 2rem;
+  padding-right: 1rem;
+  border-right: 1px solid #dfdfdf;
+}
+
+.portal-service-logo {
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+.user-admin-menu {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.user-admin-menu a {
+  color: black;
+}
+
+.user-admin-menu.active a {
+  color: #f48220;
+}
+
+.user-admin-menu.active {
+  background-color: #fefaf6;
+}
+
+.user-admin-menu.active {
+  position: relative;
+}
+
+.user-admin-menu.active a::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0.15rem;
+  width: 100%;
+  background: #f48220;
+  top: 2.875rem;
+  content: "";
+}
+
+#login-link-id {
+  color: #f48220;
+  margin-right: 2rem;
+}
+
+.header-list {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#profile-name-header {
+  color: black;
+  font-size: 0.9375rem;
+  margin-right: 1rem;
+}
+
+#user-img-id {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+.chevron {
+  margin-right: 2rem;
+  filter: invert(29%) sepia(97%) saturate(18%) hue-rotate(11deg) brightness(97%) contrast(84%);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#user-menu-id {
+  right: 2rem;
+  width: 12rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+#user-menu-id li a {
+  color: #5d5c5b;
+}
+
+#user-menu-id li a img {
+  filter: invert(57%) sepia(0%) saturate(595%) hue-rotate(164deg) brightness(88%) contrast(81%);
+}
+
+#user-menu-id li a:hover {
+  color: #f48220;
+  filter: invert(54%) sepia(85%) saturate(1011%) hue-rotate(345deg) brightness(98%) contrast(96%);
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  border: 0 none;
+  max-width: 100%;
+  /*vertical-align: top;*/
+}
+
+a {
+  outline: none;
+  cursor: pointer;
+  color: #1581e2;
+  text-decoration: inherit;
+}
+
+a:hover, a:focus {
+  color: #2d4765;
+  text-decoration: none;
+  outline: none;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+header {
+  border-bottom: 0.0625rem solid #eae9e9;
+  z-index: 999;
+  background: #fff;
+  position: relative;
+}
+
+#user-img-id {
+  margin-right: 1rem;
+}
+
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
