@@ -14,6 +14,10 @@ async function makeIndex() {
       const frame= content.split("<iframe")?.[1].split("src=\"")?.[1].split("\"")[0]?? "";
       const game= file.split(".html")[0];
       console.log("file", file, "game", game, "frame", frame);
+      try {
+        fs.unlinkSync(`${game}/index.html`);
+        fs.rmdirSync(game);
+      } catch (e) {}
       indexHTML+= `<a href="/${game}/">/${game}/</a><br>`;
       if (frame.indexOf("/classroom6x.gitlab.io/")<= -1)  {
         indexFrame= `<html><body style="padding:0px;margin:0px;"><iframe src="${frame}" width= "100%" height= "100%" frameborder="0"></iframe></body></html>`;
