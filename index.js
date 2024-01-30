@@ -26,7 +26,7 @@ async function makeIndex() {
         fs.rmdirSync(game);
       } catch (e) {}
       indexHTML+= `<a href="/${game}/">/${game}/</a><br>`;
-      mapXML+= `<url><loc>/${game}/</loc></url>\n`;
+      mapXML+= `<url><loc>https://classroom6x.gitlab.io/${game}/</loc></url>\n`;
       if (frame.indexOf("/classroom6x.gitlab.io/")<= -1)  {
         totalFrame++;
         indexFrame= `<html><body style="padding:0px;margin:0px;"><iframe src="${frame}" width= "100%" height= "100%" frameborder="0"></iframe></body></html>`;
