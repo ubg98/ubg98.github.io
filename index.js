@@ -40,7 +40,7 @@ async function makeIndex() {
   indexHTML+= `<hr></hr><h4>Games: ${totalGame}, Frames: ${totalFrame}</h4>`;
   mapXML+= "</urlset>";
   fs.writeFileSync("index.html", indexHTML);
-  fs.writeFileSync("sitemaps.xml", mapXML);
+  fs.writeFileSync("sitemap.xml", mapXML);
 }
 
 
