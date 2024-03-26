@@ -191,15 +191,37 @@
 
       
   <h4>TopVaz!</h4>
-  <iframe class="gm-iframe" id="gm-area" src="https://topvaz.wp235.com/touchdowners/" width="840" height="560" scrolling="none" frameborder="0" allowfullscreen></iframe>
+  <iframe class="gm-iframe" id="gameFrame" src="https://topvaz.wp235.com/touchdowners/" allowfullscreen></iframe>
 
 
 			
 			<div style="padding-top: 10px;padding-bottom: 10px;"  class="container" align="Center">
 				<button class="theme-btn btn-style-one" onclick="openFullscreen();">FullScreen</button>
 			</div>
+			<script>
+				function fixGameFrame(reload) {
+					const gameFrame= document.getElementById("gameFrame");
+					if (gameFrame) {        
+							gameFrame.style.width= "100%";
+							let frameWidth= gameFrame.clientWidth;
+							if (frameWidth> 840) {
+								frameWidth= 840;
+								gameFrame.style.height= `${frameWidth}px`;
+							}
+							let frameHeight= Math.floor(frameWidth* 6/8);      
+							gameFrame.style.height= `${frameHeight}px`;
+							gameFrame.style.scrolling= "none";
+							gameFrame.style.frameborder= 0;        
+					}
+				}
+			
+				window.addEventListener("load", (event)=> { fixGameFrame(true); });
+				window.addEventListener("resize", (event)=> { fixGameFrame(false); });
+			</script>
+
+
 	    <script>
-	    var elem = document.getElementById("gm-area");
+	    var elem = document.getElementById("gameFrame");
 	    function openFullscreen() {
 	      if (elem.requestFullscreen) {
 	        elem.requestFullscreen();
