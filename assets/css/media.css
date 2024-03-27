@@ -1,0 +1,50 @@
+@media all and (display-mode: fullscreen) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media all and (display-mode: fullscreen) {
+  #footer {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .user-list {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #user-menu-id {
+    left: 0.75rem;
+    top: 12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #user-link-id, #admin-id {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .user-list {
+    padding-left: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c4-logo {
+    margin: 1rem 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #login-link-id {
+    margin-right: 1rem;
+  }
+}
+

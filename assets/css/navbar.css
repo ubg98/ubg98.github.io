@@ -1,0 +1,34 @@
+#mainNav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.navbar-light {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.nav-link {
+  margin: 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-link active {
+  margin: 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 8px;
+}
+
+@media all and (display-mode: fullscreen) {
+  #mainNav {
+    display: none;
+  }
+}
+
